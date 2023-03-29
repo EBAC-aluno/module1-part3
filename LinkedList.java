@@ -1,4 +1,4 @@
-public class LinkedList {
+public class LinkedList implements ILinkedList{
 
   private Node tail = new Node(0);
   private int size = 0;

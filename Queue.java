@@ -1,49 +1,49 @@
-public class Queue implements IQueue {
+  public class Queue implements IQueue {
 
-  private Node head = new Node(0);
-  private Node tail = new Node(0);
-  private int size = 0;
+    private Node head = new Node(0);
+    private Node tail = new Node(0);
+    private int size = 0;
 
-  public Queue() {
-  }
+    public Queue() {
+    }
 
-  public void add(int data) {
-    addNode(data);
-    incrementSize();
-  }
+    public void add(int data) {
+      addNode(data);
+      incrementSize();
+    }
 
-  public int remove() {
+    public int remove() {
 
-    checkIfQueueIsEmptyError();
+      checkIfQueueIsEmptyError();
 
-    int data = getDataFromHeadNode();
-    removeHeadNode();
-    decrementSize();
-    return data;
-  }
+      int data = getDataFromHeadNode();
+      removeHeadNode();
+      decrementSize();
+      return data;
+    }
 
-  public int front() {
-    checkIfQueueIsEmptyError();
-    return head.data;
-  }
+    public int front() {
+      checkIfQueueIsEmptyError();
+      return head.data;
+    }
 
-  public int tail() {
-    checkIfQueueIsEmptyError();
-    return tail.data;
-  }
+    public int tail() {
+      checkIfQueueIsEmptyError();
+      return tail.data;
+    }
 
-  public int size() {
-    return size;
-  }
+    public int size() {
+      return size;
+    }
 
-  public boolean isEmpty() {
-    return size == 0;
-  }
+    public boolean isEmpty() {
+      return size == 0;
+    }
 
   public void print() {
     Node n = head;
     for (int i = 0; i < size; i++) {
-      System.out.println(n.data + " ");
+      System.out.print(n.data + " ");
       n = n.nextNode;
     }
   }
