@@ -1,4 +1,4 @@
-public class Stack {
+public class Stack implements IStack {
 
   private Node headNode;
   private int stackSize;

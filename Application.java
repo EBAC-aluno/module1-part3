@@ -1,7 +1,7 @@
 public class Application {
   public static void main(String[] args) {
 
-    Stack s = new Stack();
+    IStack s = new Stack();
     s.push(6);
     s.push(53);
     s.push(3);

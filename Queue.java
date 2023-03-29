@@ -1,4 +1,4 @@
-public class Queue {
+public class Queue implements IQueue {
 
   private Node head = new Node(0);
   private Node tail = new Node(0);
